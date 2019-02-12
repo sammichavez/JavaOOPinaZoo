@@ -3,10 +3,12 @@ public class Zoo {
     public static void main(String[] args) {
         Zoo z = new Zoo();
         z.sleep("Tigger");
-
         z.eat("Tigger", "meat");
-
         z.eat("Tigger", "bacon");
+
+        Bear pooh = new Bear("Pooh" , "fish");
+        pooh.eat("fish");
+        pooh.eat("meat");
 
     }
 
