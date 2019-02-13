@@ -1,5 +1,5 @@
 public class Tiger extends Animal {
-    public Tiger(String name){
+    public Tiger(String name) {
         super(name, "meat");
     }
 
@@ -8,8 +8,5 @@ public class Tiger extends Animal {
         System.out.println(name + " sleeps for 8 hours");
     }
 
-    public void main(String [] args) {
-       Tiger tigger = new Tiger("tigger");
-       tigger.eat("meat");
-       tiger.eat("kibble");
+
 }
