@@ -1,11 +1,6 @@
-public class Tiger {
-    private String name;
-    private String favoriteFood;
-
-
-    public Tiger(String name, String favoriteFood) {
-        this.name = name;
-        this.favoriteFood = "meat";
+public class Tiger extends Animal {
+    public Tiger(String name){
+        super(name, "meat");
     }
 
 
@@ -13,18 +8,8 @@ public class Tiger {
         System.out.println(name + " sleeps for 8 hours");
     }
 
-    public void eat(String food) {
-        System.out.println(this.name + " eats " + food);
-
-        if (food == favoriteFood) {
-
-            System.out.println("YUM!!! " + this.name + " wants more " + food);
-
-        } else {
-
-            sleep();
-
-        }
-
-    }
+    public void main(String [] args) {
+       Tiger tigger = new Tiger("tigger");
+       tigger.eat("meat");
+       tiger.eat("kibble");
 }
