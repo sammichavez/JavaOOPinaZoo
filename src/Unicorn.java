@@ -1,6 +1,6 @@
 public class Unicorn {
     public Unicorn(String name){
-        super(name , "")
+        super(name , "marshmellows")
     }
     public void eat(String food){
         if(food == this.favoriteFood){
@@ -12,7 +12,7 @@ public class Unicorn {
         }
     }
     public void sleep() {
-        System.out.println(this.name + " never sleeps");
+        System.out.println(this.name + " sleeps on cloud nine ");
     }
 }
 }

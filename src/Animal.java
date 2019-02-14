@@ -1,11 +1,12 @@
 public class Animal {
+        static int population;
         String name;
         String favoriteFood;
 
         public Animal(String name, String favoriteFood) {
                 this.name = name;
                 this.favoriteFood = favoriteFood;
-
+        population++;
         }
 
         public void sleep() {
@@ -20,7 +21,9 @@ public class Animal {
                         this.sleep();
                 }
         }
-
+                public void populationCount(){
+                System.out.println(population);
+                }
         public void main(String[] args) {
                 Tiger tigger = new Tiger("Tigger");
                 tigger.eat("meat");
